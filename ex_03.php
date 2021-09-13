@@ -1,6 +1,7 @@
 <?php
 
-    
+    $sum = add(1, 2, "+");
+    echo $sum;
 
 
 
@@ -9,13 +10,13 @@
         switch($logic)
         {
             case "+":
-                return $a + $b;
+                return "연산하신 결과는 : $a + $b = " . ($a + $b) . " 입니다.";
             case "-":
-                return $a - $b;
+                return "연산하신 결과는 : $a - $b = " . ($a - $b) . " 입니다.";
             case "/":
-                return $b == 0 ? 0 : ($a / $b);
+                return ($b == 0) ? "0으로 나눌 수 없습니다." : "연산하신 결과는 : $a / $b = " . ($a / $b) . " 입니다";
             case "*":
-                return $a * $b;
+                return "연산하신 결과는  : $a * $b = " . ($a * $b) . " 입니다.";
             default:
                 return 0;
         }

@@ -7,34 +7,39 @@
 
     // $array_weapon = array_combine($array_key, $array_val);
 
-    // $array_weapons = array(
+    $array_weapons = array(
 
-    //     array(
-    //         "id" => "sword",
-    //         "name" => "long sword"
-    //     ),
+        array(
+            "id" => "sword",
+            "name" => "long sword"
+        ),
 
-    //     array(
-    //         "id" => "bow",
-    //         "name" => "long bow"
-    //     ),
+        array(
+            "id" => "bow",
+            "name" => "long bow"
+        ),
 
-    //     array(
-    //         "id" => "sword",
-    //         "name" => "short sword"
-    //     ),
+        array(
+            "id" => "sword",
+            "name" => "short sword"
+        ),
 
-    //     array(
-    //         "id" => "bow",
-    //         "name" => "short bow"
-    //     )
+        array(
+            "id" => "bow",
+            "name" => "short bow"
+        )
 
-    // );
+    );
 
-    // $ret = array_column($array_weapons, "name", "id");
+    $ret = array_column($array_weapons, "name", "id");
 
-    // echo "<pre>" . print_r($array_weapons) . "</pre>";
+    echo "<pre>";
+    print_r($array_weapons);
+    echo "</pre>";
 
+    echo "<pre>";
+    print_r($ret);
+    echo "</pre>";
 
 
 ?>
