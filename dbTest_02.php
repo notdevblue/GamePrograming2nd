@@ -37,8 +37,23 @@
      . "('test', '" . $lv . "', '" . $atk . "', '" . $def . "', '" . $hp . "', '" . $exp . "', '" . $status . "');";
 
     $ret = mysqli_query($dbc, $query) or die("Error querying DB");
-    
+
+    $query = "SELECT * FROM datatable";
+    $arr_ret = mysqli_query($dbc, $query) or die("Error querying select DB");
+    if(mysqli_num_rows($arr_ret) > 0) 
+    {
+        while($row = mysqli_fetch_assoc($arr_ret))
+        {
+            p($row);
+        }
+    }
+    else
+    {
+        echo "테이블에 데이터가 없습니다";
+    }
+
     mysqli_close($dbc);
 
+    // TODO : P
      
 ?>
