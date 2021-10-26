@@ -9,10 +9,11 @@
 	$alter_table .= "VARCHAR(1000) NOT NULL DEFAULT 0";
 	$alter_table .= "AFTER `status`";
 
-	$ret = mysqli_query($dbo, $alter_table) or die ("Error create_table querying DB");
-
 	$dbo = mysqli_connect("localhost", "ggm211", "1234", "Ggm211") or die("connect fail!!");
-	$ret = mysqli_query($dbo, $create_table) or die("Error create_table querying DB");
+	// 주소, username, password, 데이터베이스 이름, port, socket
+	// 127.0.0.1, 'root', 비번, 'datatable'
+	
+	$ret = mysqli_query($dbo, $alter_table) or die ("Error create_table querying DB");
 
 	$select_table = "SHOW FULL COLUMNS FROM ";
 	$select_table .= $db_name . "." . $table_name . ";";

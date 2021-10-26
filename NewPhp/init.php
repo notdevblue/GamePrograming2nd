@@ -2,7 +2,7 @@
 
 
  	$start_time = microtime();
-	define("HOST_DIR", "/var/www/html/Class/ggm211");
+	define("HOST_DIR", "/var/www/html/Class/ggm211"); // TODO : 경로 바꿔야 함
 //	define("ROOT_DIR", HOST_DIR . "/proc01");
 	define("LIB_DIR", HOST_DIR . "/lib");
 	define("DEBUG_LEVEL", 1);
